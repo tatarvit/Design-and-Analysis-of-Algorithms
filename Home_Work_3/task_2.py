@@ -93,7 +93,7 @@ def print_results(exact_result: int, exact_time: float, hll_result: int, hll_tim
     print(f"{'Execution time (sec.)':30}{exact_time:>20.5f}{hll_time:>15.5f}")
 
     error = abs(exact_result - hll_result) / exact_result * 100 if exact_result else 0
-    print(f"\nПохибка HyperLogLog: {error:.2f}%")
+    print(f"\nEstimation Error HyperLogLog: {error:.2f}%")
 
 
 def main():
